@@ -67,9 +67,9 @@
        .data-icon {
             width: 28px;
             height: 28px;
-            border-radius: 50%; /* Optional: Runde Ecken für das Bild */
+            border-radius: 50%; 
             margin-right: 0.5rem;
-            object-fit: contain; /* Stellt sicher, dass das Bild passt */
+            object-fit: contain; 
         }
 
         .flex {
