@@ -1,0 +1,100 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem; 
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 2rem 0;
+            letter-spacing: 1px;
+        }
+
+
+        .glass-container {
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-radius: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.35), inset 0 1px 1px rgba(255,255,255,0.4);
+            width: 100%; 
+            max-width: 1200px;
+            padding: 1.5rem;
+            display: grid;
+            gap: 1.5rem;
+            
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        @media (min-width: 640px) {
+            .glass-container {
+                grid-template-columns: repeat(2, 1fr);
+                padding: 2rem;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .glass-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .data-point {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s, background 0.2s;
+            cursor: default;
+        }
+
+        .data-point:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .icon-placeholder {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #00ffff, #66f0f0);
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .label {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #ddd;
+        }
+
+        .value {
+            font-size: 2.5rem;
+            font-family: monospace;
+            font-weight: 800;
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+
+        .unit {
+            font-size: 0.9rem;
+            font-weight: 300;
+            color: #66f0f0;
+        }

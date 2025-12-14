@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemetry</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+ <h1>Live Telemetry</h1>
+
+    <div class="glass-container">
+        <div class="data-point">
+            <div class="flex">
+                <span class="icon-placeholder"></span>
+                <span class="label">X-Koordinate</span>
+            </div>
+            <div class="value" id="x-coord-value">123.456</div>
+            <div class="unit">m</div>
+        </div>
+        <div class="data-point">
+            <div class="flex">
+                <span class="icon-placeholder"></span>
+                <span class="label">Y-Koordinate</span>
+            </div>
+            <div class="value" id="y-coord-value">-78.901</div>
+            <div class="unit">m</div>
+        </div>
+        <div class="data-point">
+            <div class="flex">
+                <span class="icon-placeholder"></span>
+                <span class="label">Geschwindigkeit</span>
+            </div>
+            <div class="value" id="speed-value">245.8</div>
+            <div class="unit">km/h</div>
+        </div>
+        <div class="data-point">
+            <div class="flex">
+                <span class="icon-placeholder"></span>
+                <span class="label">Stoppuhr</span>
+            </div>
+            <div class="value" id="stopwatch-value">00:01:23.45</div>
+            <div class="unit"></div>
+        </div>
+        <div class="data-point">
+            <div class="flex">
+                <span class="icon-placeholder"></span>
+                <span class="label">Temperatur</span>
+            </div>
+            <div class="value" id="temperature-value">95.5</div>
+            <div class="unit">°C</div>
+        </div>
+        <div class="data-point">
+            <div class="flex">
+                <span class="icon-placeholder"></span>
+                <span class="label">G-Kräfte</span>
+            </div>
+            <div class="value" id="g-forces-value">2.15</div>
+            <div class="unit">G</div>
+        </div>
+    </div>
+    
+</body>
+</html>
