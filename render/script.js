@@ -81,7 +81,6 @@ function getFutureData(data, minutesAhead) {
         return null;
     }
 }
-// Test
 async function fetchWeather() {
     const API_URL = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&timezone=Europe/Berlin` +
         '&current=temperature_2m,relative_humidity_2m,precipitation,rain,showers,snowfall,weather_code,cloud_cover,wind_speed_10m,wind_direction_10m' +
